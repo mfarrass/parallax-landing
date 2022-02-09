@@ -14,35 +14,38 @@ body {
   background: linear-gradient(#2b1055, #7597de); 
 }
 
-.custom-nav .navbar-brand img {
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navbar img {
   width: 30px;
   height: 30px;
   margin-top: -4px;
 }
 
-.custom-nav .navbar-brand span {
+.navbar .navbar-brand {
   color: white;
+  position: relative;
   font-weight: 700;
   font-family: 'Dongle', sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-left: 0.2em;
   text-shadow: 2px 1px black;
 }
 
-.custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
-  color: #eaeaea;
-  font-weight: 500;
-  margin-left: 2.5em;
-  -webkit-transition: 0.3s color ease;
-  transition: 0.3s color ease;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+.navbar-nav .nav-item .nav-link{
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
   border-radius: 10px;
 }
 
-.custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
-  color: #383838;
-  background-color: white;
+.navbar-nav .nav-item .nav-link:hover {
+  color: #2b1055;
+  background: #fff;
 }
 
 section {
@@ -74,13 +77,12 @@ section img {
   height: 100%;
   object-fit: cover;
   pointer-events: none;
-
 }
 section img#moon {
   mix-blend-mode: screen;
 }
 section img#mountains_front {
-  z-index: 10;
+  z-index: ;
 }
 #text {
   position: absolute;
@@ -122,16 +124,4 @@ color: #fff;
 .sec p {
 font-size: 1em;
 color: #fff;
-}
-
-@media screen and (max-width: 992px) {
-  .custom-nav {
-    margin-top: 14px;
-  }
-
-  .sec h2 {
-    text-align: center;
-    }
-    
-
 }
